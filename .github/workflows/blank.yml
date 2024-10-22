@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Powerful MacOS VPS
 
 # Controls when the workflow will run
 on:
@@ -34,7 +34,8 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          brew install tiger-vnc --cask
+          brew install tiger-vnc 
+          brew install neofetch
           vncserver :1 -securitytypes None
           echo setup tunnel in this 
           brew install tmate
